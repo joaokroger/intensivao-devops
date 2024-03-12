@@ -8,7 +8,7 @@ function App() {
   
   function handleClick() {
     if (number1 && number2) {
-      fetch(`/sum/${number1}/${number2}`, {
+      fetch(`/api/sum/${number1}/${number2}`, {
         method: "GET"
       })
       .then((response) => response.json())
