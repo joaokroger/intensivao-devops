@@ -10,7 +10,8 @@ function App() {
   function handleClick() {
     if (number1 && number2) {
       fetch(`${baseConfig.baseURL}/api/sum/${number1}/${number2}`, {
-        method: 'GET'
+        method: 'GET',
+        mode: 'cors'
       })
       .then((response) => response.json())
       .then((data) => {
